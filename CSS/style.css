@@ -1,0 +1,235 @@
+/* 全局样式重置 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "微软雅黑", sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* 页面容器 */
+.container {
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* 头部样式 */
+.header {
+    text-align: center;
+    padding: 20px 0;
+    border-bottom: 2px solid #2c3e50;
+    margin-bottom: 30px;
+}
+
+.header img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 28px;
+    color: #2c3e50;
+}
+
+/* 导航栏样式 */
+.nav {
+    background-color: #2c3e50;
+    height: 50px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 20px;
+    font-size: 16px;
+}
+
+.nav a:hover {
+    background-color: #34495e;
+}
+
+/* 主体内容排版 */
+.main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+/* 简介模块 */
+.intro {
+    width: 65%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.intro h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-left: 5px solid #3498db;
+    padding-left: 10px;
+}
+
+.intro p {
+    font-size: 14px;
+    line-height: 1.8;
+    text-indent: 2em;
+}
+
+/* 图片模块 */
+.img-box {
+    width: 30%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.img-box img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.img-box a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.img-box a:hover {
+    text-decoration: underline;
+}
+
+/* 友情链接模块 */
+.link {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+.link h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    border-left: 5px solid #3498db;
+    padding-left: 10px;
+}
+
+.link a {
+    color: #666;
+    text-decoration: none;
+    padding: 0 15px;
+    font-size: 14px;
+}
+
+.link a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+/* 底部样式 */
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #ccc;
+    margin-top: 50px;
+    font-size: 12px;
+    color: #666;
+}
+
+/* 注册页面表单样式 */
+.form-box {
+    width: 600px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-box h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+/* 表格排版 */
+.form-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 10px 15px;
+}
+
+.form-table td {
+    padding: 5px;
+}
+
+.form-table td:first-child {
+    text-align: right;
+    width: 120px;
+    font-size: 14px;
+}
+
+/* 输入框样式 */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="tel"] {
+    width: 300px;
+    height: 38px;
+    padding: 0 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+/* 按钮样式 */
+.btn {
+    width: 100px;
+    height: 40px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+}
+
+/* 校验提示文字样式 */
+.tip {
+    color: red;
+    font-size: 12px;
+    margin-left: 10px;
+}

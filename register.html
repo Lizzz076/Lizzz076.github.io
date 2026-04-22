@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <a href="index.html">
+            <img src="img/logo.png" alt="logo">
+        </a>
+        <h1>用户注册</h1>
+    </div>
+
+    <div class="form-box">
+        <form action="#" method="post" onsubmit="return checkForm()">
+            <table class="form-table">
+                <tr>
+                    <td>用户名：</td>
+                    <td><input type="text" id="username" onblur="checkUsername()"><span class="tip" id="usernameTip"></span></td>
+                </tr>
+                <tr>
+                    <td>密码：</td>
+                    <td><input type="password" id="pwd" onblur="checkPwd()"><span class="tip" id="pwdTip"></span></td>
+                </tr>
+                <tr>
+                    <td>确认密码：</td>
+                    <td><input type="password" id="repwd" onblur="checkRepwd()"><span class="tip" id="repwdTip"></span></td>
+                </tr>
+                <tr>
+                    <td>性别：</td>
+                    <td><input type="radio" name="sex" value="female" checked>女 <input type="radio" name="sex" value="male">男</td>
+                </tr>
+                <tr>
+                    <td>爱好：</td>
+                    <td><input type="checkbox" name="hobby" value="game">游戏 <input type="checkbox" name="hobby" value="study">学习 <input type="checkbox" name="hobby" value="sport">运动</td>
+                </tr>
+                <tr>
+                    <td>邮箱：</td>
+                    <td><input type="email" id="email" onblur="checkEmail()"><span class="tip" id="emailTip"></span></td>
+                </tr>
+                <tr>
+                    <td>手机号：</td>
+                    <td><input type="tel" id="phone" onblur="checkPhone()"><span class="tip" id="phoneTip"></span></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="提交" class="btn">
+                        <input type="reset" value="重置" class="btn" style="background:#666;margin-left:20px;">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>©2026 大数据技术专业 Java Web实验</p>
+    </div>
+</div>
+<script src="JS/check.js"></script>
+</body>
+</html>
